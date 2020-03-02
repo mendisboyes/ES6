@@ -1,2 +1,2 @@
 import foo from './mobile.js'
-foo(9,8)
+foo(9,52)
