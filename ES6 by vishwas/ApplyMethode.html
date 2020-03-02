@@ -1,0 +1,21 @@
+<script>
+    const student1={
+        name:"Ashish",
+        marks:63,
+        rank:15,
+        dept:"computer",
+        nature:function(total,dept){
+            console.log(`${this.name} is cool,happy,smart too and aimbicious 
+            so hi scored ${this.marks}. hi passed with rank ${this.rank}.
+             in S{dept}with total  ${total}`)
+        }
+    }
+    student2.nature(550)
+    const student2={
+        name:"Manish",
+        marks:69,
+        rank:26,
+    }
+    student1.nature.apply(student2,[760,"mechanical"]);
+    
+    </script>

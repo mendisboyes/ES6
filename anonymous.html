@@ -1,0 +1,28 @@
+<script>
+
+   
+
+    //  let a= function(d,k){
+    //      let sum=d+k;
+    //      console.log(sum)
+    //  }
+    //  a(5,55)
+
+// const myFunction=(functions)=>
+// {
+//    return functions();
+// }
+// myFunction(function(){
+//     console.log("hi i am annonymous function")
+// })
+
+function student(){
+    console.log("hi i am parent function")
+    return function(){
+        console.log("hi i am child function")
+    }
+}
+let c=student();
+console.log(c())
+
+</script>

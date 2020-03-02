@@ -1,0 +1,15 @@
+<script>
+    const student1={
+        name:"Ashish",
+        id:12,
+        details:function(){
+            console.log(`Hi, ${this.name} your id is ${this.id} `)
+        }
+    }
+   const student2={
+       name:"Rahul",
+       id:22
+   }
+   student1.details.apply(student2,["Sagar",515]);
+   
+</script>

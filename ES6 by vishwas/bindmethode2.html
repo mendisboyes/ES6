@@ -1,0 +1,22 @@
+<script>
+    let student1={
+        name:"Ashish",
+        sirname:"Modak"
+    }
+
+    let student2={
+        name:"Smaran",
+        sirname:"Joshi"
+    }
+    let student3={
+        name:"Shardul",
+        sirname:"Thakre"
+    }
+
+    function details(marks,grade){
+        console.log(`Hi, ${this.name} ${this.sirname} you have scored ${marks}% and having grade ${grade}`)
+    }
+    let std= details.bind(student2);
+    std(90,"a+")
+
+</script>

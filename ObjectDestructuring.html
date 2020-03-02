@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            ES6
+        </title>
+        <script>
+            const student={
+                name:"Ashish",
+                marks:66,
+                branch:"computer engineering",
+                passout:2016,
+
+                sub:{
+                    coding:"React",
+                    testing:"Jest"
+                }
+            }
+            let{name:myName,marks,branch,passout,sub}=student
+            document.write(`Hi i am ${myName} i ve scored
+             ${marks}% from branch ${branch}. Passout in ${passout}.
+             I love ${sub.testing}`)
+        </script>
+    </head>
+</html>

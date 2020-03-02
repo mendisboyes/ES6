@@ -1,0 +1,26 @@
+<script>
+    var a=[10,20,30,40];
+    //var b=a; 
+    //here reference is copy but we want values.
+    //if we made changes in a are reflected in b.this shuld not happen
+    //we want a and b seperate.here spread operator come in picture...
+
+    var b=[...a];//spread oprator
+    
+    console.log(a);
+    console.log(a[1]);
+    console.log(b[0]);
+    var b=[...a,4,5,6];
+    console.log(b);
+    var c=[...a,...b];
+    console.log(c);
+
+    var x={name:"ashish",lastname:"modak",blood:"o+"};
+    var y={...x};
+   console.log(x);
+   console.log(y);
+   var y={...x,name:"suraj"};
+   console.log(y);
+   var z={...a,...b};
+   console.log(z)
+</script>

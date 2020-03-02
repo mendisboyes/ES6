@@ -1,0 +1,27 @@
+<script>
+     let student1={
+         name:"Ashish",
+         id:172,
+         marks:90
+     }
+     let student2={
+         name:"Shreepad",
+         id:125,
+         marks:89
+     }
+     let student3={
+         name:"Sachin",
+         id:152,
+         marks:88
+     }
+     function details(){
+         console.log(`Hi, ${this.name} your id id ${this.id} and marks ${this.marks}`)
+     }
+     let record1=details.bind(student1);
+     let record2=details.bind(student2);
+     let record3=details.bind(student3);
+     record1();
+     record2();
+     record3();
+
+</script>

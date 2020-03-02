@@ -1,0 +1,33 @@
+<script>
+    const parent=(p)=>
+    {
+        let c=15;
+        function child(){
+            console.log(p+c)
+        } return child;
+    }
+    let c=parent(5555);
+    c();
+
+   //..................Closer Example 2..................//
+
+   const interview=(name)=>     //Parent function 
+   {
+       return function(topic){     //inner closer functin
+       if(name==="Ashish"){
+            console.log(` Hi ${name} please explain ${topic}`)
+       }
+       else if(name==="Ram"){
+           console.log(`Hi ${name} please explain ${topic}`)
+       }
+       else if(name==="Shyam"){
+           console.log(`Hi ${name} please explain ${topic}`)
+       }else{
+           console.log("wrong candidate")
+       }
+       }
+   }
+   interview("Ashish")("ReactJS");
+   interview("Shyam")("NodeJS")
+   interview("Ram")("XpressJS")
+</script>

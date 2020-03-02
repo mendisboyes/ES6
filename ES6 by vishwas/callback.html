@@ -1,0 +1,13 @@
+<script>                /* in callback function, one function passeed 
+                        as argument to another function. callback() can access argument 
+                        and pass as parameter to previous function*/
+    const ashish=(like)=>
+    {
+        console.log(`hi i am ashish and ${like}`)
+    }
+    const ajinkya=(callback)=>{
+       var like="i love cricket"
+        callback(like)
+    }
+    ajinkya(ashish);            //callback() invoked
+</script>

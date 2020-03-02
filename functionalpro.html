@@ -1,0 +1,28 @@
+<script>
+const a=()=>{
+    return("hello");
+}                       //we can pass function in variable
+console.log(a())
+
+
+let student={
+    a:9,
+    b:545,
+    add:function(){
+            console.log(this.a+this.b)  //we can pass functin in object
+    }
+}
+student.add()
+
+const myName=()=>
+{
+    return ("Hi")
+}
+const greet=(sayhi,name)=>
+{
+    console.log(sayhi()+name)// we can pass function as argument
+}
+greet(myName,"Ashish")
+
+
+</script>

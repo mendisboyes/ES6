@@ -1,0 +1,65 @@
+<script>
+    const interview=(name)=>{
+        if(name==="Ashish"){
+            return function(topic){
+                console.log(`hi ${name} what is ${topic}`)
+            }
+        }
+        if(name==="Smaran"){
+            return function(topic){
+                console.log(`hi ${name} what is ${topic}`)
+            }
+        }
+        if(name==="Narayan"){
+            return function(topic){
+                console.log(`hi ${name} what is ${topic}`)
+            }
+        }
+        else{
+            return function(){
+                console.log("Wrong Candidate")
+            }
+        }
+    }
+
+    interview("Ashish")("ReactJS");
+    interview("Smaran")("X-PressJS");
+    interview("Narayaln")("AngularJs");
+
+//...............HOF Example 2........................//
+
+const add=(x)=>
+{
+    return function(y){
+        console.log(x+"-addition")
+    }
+}
+
+const sub=(a)=>
+{
+    return function(b){
+        console.log(a-b+"-subtraction")
+    }
+}
+
+const mult=(p)=>
+{
+    return function(q){
+        console.log(p*q+"-multiplication")
+    }
+}
+
+const div=(r)=>
+{
+    return function(s){
+        console.log(r/s+"-division")
+    }
+}
+
+add(5)(4);
+sub(50)(4);
+mult(50)(4);
+div (50)(4);
+
+
+</script>

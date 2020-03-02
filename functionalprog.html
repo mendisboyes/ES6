@@ -1,0 +1,48 @@
+<script>
+    // we can assign function to variable
+    // let a=function(){
+    //     document.write("hi i am function")
+    // }
+    // a();
+
+    //we can pass function in object
+
+    // const student={
+    //     name:"Ashish",
+    //     sirname:"Modak",
+    //     fullname:function(){
+    //         document.write("<h1>" +this.name+" "+this.sirname+"</h1>")
+    //     }
+    // }
+    // student.fullname()
+
+    //we can pass function as argument
+
+     
+    /*const greet=(me,name)=>
+    {
+        console.log(me()+""+"...Ashish")
+
+    }
+       
+    const myName=()=>
+    {
+        return("hi")
+    }
+
+    greet(myName,name)*/
+
+    //we can return funtion from function
+
+    const a=()=>
+    {return b=()=>
+        {
+            console.log("Hi ashish")
+    }
+    }
+    a()();
+
+    
+
+
+</script>

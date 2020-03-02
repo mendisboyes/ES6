@@ -1,0 +1,19 @@
+<script>
+    // let student={
+    //     name:"Ashish",
+    //     sirname:"Modak",
+    //     details:function(){
+    //         console.log(`Hi,${this.name} ${this.sirname}`)}
+    // }
+    // let school=student.details.bind(student);
+    // school()
+
+    let student={ name:"Ashish",sirname:"Modak"
+    }
+    function details(marks,grade)
+    {console.log(`${this.name} ${this.sirname} ${marks} ${grade} `) }
+   
+    let see=details.bind(student);
+    see(55,"a")
+
+</script>

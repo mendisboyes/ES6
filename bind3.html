@@ -1,0 +1,11 @@
+<script>
+    let student={
+        name:"Ashish",
+        id:213,
+        details:function(){
+            console.log(`Hi ${this.name} Your id is ${this.id}`)
+        }
+    }
+    let info=student.details.bind(student);
+  info()
+</script>
