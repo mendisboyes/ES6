@@ -1,4 +1,2 @@
-import  Nokia from './mobile.js'
- const p= new Nokia();
- p.volumup()
- 
+import foo from './mobile.js'
+foo(9,8)

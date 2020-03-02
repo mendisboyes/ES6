@@ -1,5 +1,3 @@
-export default class Nokia{
-     volumup(){
-        console.log("hi Volum")
-    }
+export default function foo(a,c){
+    console.log(a+c)
 }
